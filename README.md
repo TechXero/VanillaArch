@@ -1,5 +1,3 @@
-# VanillaArch
-
 # -/ Compile Fresh ArchISO :
 
 1- sudo pacman -S archiso<br />
@@ -17,37 +15,37 @@ sh archfi<br />
 
 ----> Main :
 
-File System : dosfstools
-FSTab -> Label
-Bootloader -> Grub
-Extras -> Nano
-Updates -> Pacman Contrib, yay,
-All keyring crap
-Install -> downgrade, pkgstats,aurvote
-Console -> Generic : Uncheck Vim, add linux-firmware, nmon, neofetch, gpm
-Compression -> All
-Network tools -> defasult + dnsutils, nmap, netdiscover, net-tools
-Services -> default + samba + bluez, pkgstats, ntp
-Filesystem -> all
-Sound -> all
-Xorg -> default + font-util
-Fonts -> Defaults -> all -> all
-Video drivers -> nvidia, nvidia-dkms
+File System : dosfstools<br />
+FSTab -> Label<br />
+Bootloader -> Grub<br />
+Extras -> Nano<br />
+Updates -> Pacman Contrib, yay,<br />
+All keyring crap<br />
+Install -> downgrade, pkgstats,aurvote<br />
+Console -> Generic : Uncheck Vim, add linux-firmware, nmon, neofetch, gpm<br />
+Compression -> All<br />
+Network tools -> defasult + dnsutils, nmap, netdiscover, net-tools<br />
+Services -> default + samba + bluez, pkgstats, ntp<br />
+Filesystem -> all<br />
+Sound -> all<br />
+Xorg -> default + font-util<br />
+Fonts -> Defaults -> all -> all<br />
+Video drivers -> nvidia, nvidia-dkms<br />
 
 ----> Plasma5 Desktop Environment :
 
-Packages -> all minus discover
-Plasma Apps -> categories -> system -> default
-utilities -> default plus sweeper
-Network -> default plus kdeconnect
-Graphics -> default
-Multimedia -> default minus kmix
-kdesk -> default + dolphin-plugins
-complements -> all minus partitionmanager
+Packages -> all minus discover<br />
+Plasma Apps -> categories -> system -> default<br />
+utilities -> default plus sweeper<br />
+Network -> default plus kdeconnect<br />
+Graphics -> default<br />
+Multimedia -> default minus kmix<br />
+kdesk -> default + dolphin-plugins<br />
+complements -> all minus partitionmanager<br />
 
 ----> Applications
 
-Pacman GUI -> pamac-aur -> pamac-all
+Pacman GUI -> pamac-aur -> pamac-all<br />
 
 # -/ Links :
 
