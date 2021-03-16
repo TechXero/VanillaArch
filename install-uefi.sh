@@ -10,7 +10,7 @@ echo "StationXero" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
 echo "::1       localhost" >> /etc/hosts
 echo "127.0.1.1 arch.localdomain StationXero" >> /etc/hosts
-echo root:m7pi56qe | chpasswd
+echo root:changeme | chpasswd
 
 pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet dialog wpa_supplicant mtools dosfstools reflector base-devel linux-headers avahi xdg-user-dirs xdg-utils gvfs gvfs-smb nfs-utils inetutils dnsutils bluez bluez-utils cups hplip alsa-utils pulseaudio bash-completion openssh rsync reflector acpi acpi_call tlp virt-manager qemu qemu-arch-extra ovmf bridge-utils dnsmasq vde2 openbsd-netcat ebtables iptables ipset firewalld flatpak sof-firmware nss-mdns acpid os-prober ntfs-3g terminus-font
 
@@ -32,10 +32,10 @@ systemctl enable firewalld
 systemctl enable acpid
 
 useradd -m techxero
-echo techxero:m7pi56qe | chpasswd
+echo techxero:changeme | chpasswd
 usermod -aG libvirt techxero
 
-echo "ermanno ALL=(ALL) ALL" >> /etc/sudoers.d/ermanno
+echo "ermanno ALL=(ALL) ALL" >> /etc/sudoers.d/techxero
 
 
 /bin/echo -e "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
