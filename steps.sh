@@ -3,7 +3,7 @@
 #
 
 # Install base
-pacstrap /mnt base linux linux-firmware amd-ucode nano sudo reflector rsync
+pacstrap /mnt base grub efibootmgr linux linux-firmware amd-ucode nano sudo reflector rsync
 
 # Generate FS-Tab & Mount
 genfstab -U /mnt >> /mnt/etc/fstab
@@ -33,6 +33,8 @@ passwd
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
 
+install packages.sh
+
 # Enable services
 systemctl enable NetworkManager
 systemctl enable bluetooth
@@ -60,6 +62,8 @@ cd pamac-all
 makepkg -si
 
 cd
+
+install rest
 
 # Enable SDM
 sudo systemctl enable sdm
