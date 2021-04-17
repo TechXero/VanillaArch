@@ -3,7 +3,7 @@
 #
 
 # Install base
-pacstrap /mnt base linux linux-firmware amd-ucode nano
+pacstrap /mnt base linux linux-firmware amd-ucode nano sudo reflector rsync
 
 # Generate FS-Tab & Mount
 genfstab -U /mnt >> /mnt/etc/fstab
